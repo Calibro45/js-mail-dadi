@@ -63,29 +63,48 @@ formButton.addEventListener('click', function() {
 
 // inizio esercizio dadi 
 
-// generare numero random per utente da 1 a 6
+const dadiButton = document.querySelector('#dadi-trial button');
+//console.log(dadiButton);
 
-const userNumber = Math.floor ((Math.random() * 6 ) + 1);
-console.log(userNumber);
+dadiButton.addEventListener('click', function() {
+    
+    // generare numero random per utente da 1 a 6
 
-// generare numero random per pc da 1 a 6
+    const userNumber = Math.floor ((Math.random() * 6 ) + 1);
+    //console.log(userNumber);
 
-const botNumber = Math.floor ((Math.random() * 6) + 1);
-console.log(botNumber);
+    const player_number = document.getElementById('player-number');
+    //console.log(player_number);
 
-// stabilire chi ha vinto in base al n. più alto
+    player_number.innerHTML = userNumber;
 
-if (userNumber > botNumber ) {
+    // generare numero random per pc da 1 a 6
 
-    console.log('complimenti hai vinto');
+    const botNumber = Math.floor ((Math.random() * 6) + 1);
+    //console.log(botNumber);
 
-} else if (userNumber === botNumber) {
+    const bot_number = document.getElementById('bot-number');
 
-    console.log('pareggio...rigioca');
+    bot_number.innerHTML = botNumber;
 
-} else {
+    // stabilire chi ha vinto in base al n. più alto
 
-    console.log('hai perso');
-}
+    const result = document.querySelector('#dadi-trial h2');
+
+    if (userNumber > botNumber ) {
+
+        result.innerHTML = 'Complimenti hai vinto!';
+    
+    } else if (userNumber === botNumber) {
+    
+        result.innerHTML = 'Pareggio... Giochiamo Ancora!';
+    
+    } else {
+    
+        result.innerHTML = 'Ritenta sarai più fortunato!';
+    }
+
+})
+
 
 
