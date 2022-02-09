@@ -20,19 +20,31 @@ const mail_list = [
 
 console.log(mail_list);
 
-for (let i = 0; i < mail_list.length; i++) {
-
-    const mail = mail_list[i];
-    console.log(i, mail);
-}
-
-
-
-// stampare un messaggio di avviso se l'utente può accedere
 
 formButton.addEventListener('click', function() {
-
+    
+    // valore mail input users
+    
     const userMail = mailInput.value;
     console.log(userMail);
+    
+    for (let i = 0; i < mail_list.length; i++) {
+        
+        const mail = mail_list[i];
+        console.log(i, mail);
+        
+    }
+
+    // stampare un messaggio di avviso se l'utente può accedere
+    
+    if ((userMail === 'darth-vader@darkside.com') || (userMail === 'anakin@outlook.it')) {
+
+        alert('la forza è potente in te!')
+
+    } else {
+
+        alert('ritenta...')
+    }
+    
 })
 
