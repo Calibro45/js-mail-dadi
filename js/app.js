@@ -20,6 +20,12 @@ const mail_list = [
 
 console.log(mail_list);
 
+for (let i = 0; i < mail_list.length; i++) {
+
+    const mail = mail_list[i];
+    console.log(i, mail);
+}
+
 
 
 // stampare un messaggio di avviso se l'utente può accedere
