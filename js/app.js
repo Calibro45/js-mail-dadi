@@ -64,7 +64,15 @@ formButton.addEventListener('click', function() {
 // inizio esercizio dadi 
 
 // generare numero random per utente da 1 a 6
+
+const userNumber = Math.floor ((Math.random() * 6 ) + 1);
+console.log(userNumber);
+
 // generare numero random per pc da 1 a 6
+
+const botNumber = Math.floor ((Math.random() * 6) + 1);
+console.log(botNumber);
+
 // stabilire chi ha vinto in base al n. più alto
 
 
