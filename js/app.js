@@ -75,4 +75,17 @@ console.log(botNumber);
 
 // stabilire chi ha vinto in base al n. più alto
 
+if (userNumber > botNumber ) {
+
+    console.log('complimenti hai vinto');
+
+} else if (userNumber === botNumber) {
+
+    console.log('pareggio...rigioca');
+
+} else {
+
+    console.log('hai perso');
+}
+
 
