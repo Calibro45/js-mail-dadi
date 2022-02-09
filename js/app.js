@@ -23,6 +23,8 @@ console.log(mail_list);
 const ol = document.querySelector('.mail-list');
 //console.log(ol);
 
+// ciclo for array mail e generazione lista
+
 for (let i = 0; i < mail_list.length; i++) {
     
     const mail = mail_list[i];
@@ -33,8 +35,10 @@ for (let i = 0; i < mail_list.length; i++) {
     ol.append(li);
 
     li.append(mail);
+
 }
 
+// invio form e verifica mail inserita
 
 formButton.addEventListener('click', function() {
     
@@ -55,4 +59,12 @@ formButton.addEventListener('click', function() {
     }
     
 })
+
+
+// inizio esercizio dadi 
+
+// generare numero random per utente da 1 a 6
+// generare numero random per pc da 1 a 6
+// stabilire chi ha vinto in base al n. più alto
+
 
