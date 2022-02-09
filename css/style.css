@@ -1,0 +1,77 @@
+:root {
+    --main-button-bg: #2d98ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mail-form {
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+
+.mail-form input,
+.mail-form h4 {
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+ol li {
+    padding: 5px 10px;
+}
+
+button {
+    padding: 5px 15px;
+    border: 1px solid var(--main-button-bg);
+    border-radius: 999px;
+    background-color: var(--main-button-bg);
+    color: white;
+    font-weight: 700;
+}
+
+button:hover {
+    cursor: pointer;
+    outline: 2px solid var(--main-button-bg);
+    outline-offset: 2px;
+}
+
+#dadi-trial {
+    width: 500px;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+#dadi-trial table,
+#dadi-trial button {
+    margin-bottom: 15px;
+}
